@@ -28,7 +28,7 @@ class User {
     	"ime" => $ime,
     	"kime" => $kime,
     	"lozinka" => $lozinka
-    );
+        );
 
 			$podaci = json_encode($data);
 

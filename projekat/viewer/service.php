@@ -125,7 +125,7 @@ break;
 <h2>Odgovor:</h2>
 <?php
 //Zameniti URL putanjom serverskog dela REST servisa
-$url = 'http://localhost/ItehProjekat/controller/server.php';
+$url = 'http://localhost/ITEH/projekat/controller/server.php';
 $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($curl, CURLOPT_HTTPHEADER, array('Accept: application/'.$_GET['izlaz'], 'Content-Type: application/'.$_GET['ulaz']));
