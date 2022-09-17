@@ -62,7 +62,7 @@
               <li>
                 <img src="img/slides/1.jpg" alt="" />
                 <div class="flex-caption">
-                    <h3>Argus tours</h3> 
+                    <h3>Oktopod Travel</h3> 
 					<p>Letovanja, zimovanja i izleti</p> 
 					 
                 </div>
@@ -227,7 +227,7 @@ $temperatura = $parsiran_json->data->current_condition[0]->temp_C;
 				<div class="col-lg-6">
 					<div class="copyright">
 						<p>
-							<span>&copy; Teodora, Nemanja i Nikola </span>
+							<span>&copy; Milica, Jelisaveta i Ivana </span>
 						</p>
 					</div>
 				</div>
