@@ -1,3 +1,20 @@
+<?php
+include('../model/konekcija.php');
+ $poruka = '';
+
+
+    if(isset($_POST['login'])) {
+    		require('../controller/user.php');
+    		$user = new User($mysqli);
+    		$user->login(trim($_POST['username']),trim($_POST['password']));
+        if($user->getResult()){
+          header('Location: welcome.php');
+        }else{
+          $poruka="Neuspesno logovanje korisnika. Proverite korisnicko ime i sifru";
+        }
+     }
+
+  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,56 +57,63 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php"><img src="img/logo.png" alt="logo"/></a>
+                    <a class="navbar-brand" href="../viewer/index.php"><img src="img/logo.png" alt="logo"/></a>
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.php">Pocetna</a></li>
-                        <li class="active"><a href="login.php">Ulogujte se</a></li>
-                        <li class="active"><a href="loginA.php">Admin</a></li>
-
-                        <li><a href="contact.html">Kontakt</a></li>
+                        <li class="active"><a href="../viewer/index.php">Pocetna</a></li>
+                       
+                        <li><a href="../viewer/contact.html">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 	</header>
-	<!-- end header -->
-	<section id="banner">
-	 
-	<!-- Slider -->
-        <div id="main-slider" class="flexslider">
-            <ul class="slides">
-              <li>
-                <img src="img/slides/4.jpg" alt="" />
-                <div class="flex-caption">
-                    <h3>Oktopod travel</h3> 
-					<p>Letovanja, zimovanja i izleti</p> 
-					 
-                </div>
-              </li>
-              <li>
-                <img src="img/slides/3.jpg" alt="" />
-                <div class="flex-caption">
-                    <h3>Uzivajte u zivotu</h3> 
-					<p>Putujte sa nama</p> 
-					 
-                </div>
-              </li>
-            </ul>
-        </div>
-
- 
-	</section> 
+		
 	
 	
 	<section id="content">
-	<div style="width: 50%;
-    margin-left: 420px;">
-	<h2>Pozovite nas na broj telefona 011 2589 147 </h2>
-	<br>
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.1543094938515!2d20.483199015252247!3d44.79804377909868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7078312d42d1%3A0x770ff5ee25761599!2sOktopod%20travel!5e0!3m2!1ssr!2srs!4v1580882334496!5m2!1ssr!2srs" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-	</div>
+	
+	<section id="services" class="section pad-bot5 bg-white">
+		<div class="container">
+				<div class="row mar-bot5">
+					<div class="col-md-offset-3 col-md-6">
+						<div class="section-header">
+						<div class="wow bounceIn"data-animation-delay="7.8s">
+
+							<h2 class="section-heading animated" > Login forma</h2>
+							<h4><?php if($poruka!='') echo($poruka); ?></h4>
+
+
+              <form name="login" method="post" action="">
+
+                      <div class="form-group">
+                        <label for="username" class="cols-md-2 control-label">Korisnicko ime</label>
+                          <div class="cols-md-10">
+                              <input type="text" class="form-control" name="username" id="username"  placeholder="Korisnicko ime"/>
+                          </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="password" class="cols-md-2 control-label">Lozinka</label>
+                          <div class="cols-md-10">
+                              <input id="password" type="text" class="form-control" name="password" id="password"  placeholder="Lozinka"/>
+                          </div>
+                      </div>
+                      <div class="form-group ">
+                        <input type="submit" name="login" class="btn btn-info btn-lg " value="Uloguj se">
+                      </div>
+                    </form>
+						</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+		</section>
 	
 	
 	</section>
@@ -142,6 +166,6 @@
 <script src="js/jquery.isotope.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/animate.js"></script>
-<script src="js/custom.js"></script> 
+<script src="js/custom.js"></script>
 </body>
 </html>

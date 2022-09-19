@@ -28,11 +28,11 @@ class User {
     	"ime" => $ime,
     	"kime" => $kime,
     	"lozinka" => $lozinka
-    );
+        );
 
 			$podaci = json_encode($data);
 
-			$curl = curl_init("http://localhost/projekat/api/noviKorisnik");
+			$curl = curl_init("http://localhost/ITEH/projekat/api/noviKorisnik");
 			curl_setopt($curl, CURLOPT_POST, TRUE);
 			curl_setopt($curl, CURLOPT_POSTFIELDS, $podaci);
 			curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
