@@ -1,0 +1,28 @@
+[15-Sep-2022 12:11:59 Europe/Berlin] PHP Warning:  include(../controller/proizvod.php): failed to open stream: No such file or directory in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\service.php on line 3
+[15-Sep-2022 12:11:59 Europe/Berlin] PHP Warning:  include(): Failed opening '../controller/proizvod.php' for inclusion (include_path='C:\Fakultet\xampp\php\PEAR') in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\service.php on line 3
+[15-Sep-2022 12:12:09 Europe/Berlin] PHP Warning:  include(../controller/proizvod.php): failed to open stream: No such file or directory in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\service.php on line 3
+[15-Sep-2022 12:12:09 Europe/Berlin] PHP Warning:  include(): Failed opening '../controller/proizvod.php' for inclusion (include_path='C:\Fakultet\xampp\php\PEAR') in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\service.php on line 3
+[15-Sep-2022 12:16:07 Europe/Berlin] PHP Warning:  include(../controller/proizvod.php): failed to open stream: No such file or directory in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\admin.php on line 3
+[15-Sep-2022 12:16:07 Europe/Berlin] PHP Warning:  include(): Failed opening '../controller/proizvod.php' for inclusion (include_path='C:\Fakultet\xampp\php\PEAR') in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\admin.php on line 3
+[15-Sep-2022 12:16:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class 'Proizvod' not found in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\admin.php:144
+Stack trace:
+#0 {main}
+  thrown in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\admin.php on line 144
+[15-Sep-2022 12:16:59 Europe/Berlin] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\admin.php on line 147
+[15-Sep-2022 12:16:59 Europe/Berlin] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\admin.php on line 185
+[15-Sep-2022 12:20:08 Europe/Berlin] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\admin.php on line 147
+[15-Sep-2022 12:20:08 Europe/Berlin] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\admin.php on line 185
+[15-Sep-2022 12:20:09 Europe/Berlin] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\admin.php on line 147
+[15-Sep-2022 12:20:09 Europe/Berlin] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\admin.php on line 185
+[15-Sep-2022 12:20:10 Europe/Berlin] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\admin.php on line 147
+[15-Sep-2022 12:20:10 Europe/Berlin] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\admin.php on line 185
+[15-Sep-2022 12:20:11 Europe/Berlin] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\admin.php on line 147
+[15-Sep-2022 12:20:11 Europe/Berlin] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\admin.php on line 185
+[15-Sep-2022 12:20:11 Europe/Berlin] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\admin.php on line 147
+[15-Sep-2022 12:20:11 Europe/Berlin] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\admin.php on line 185
+[15-Sep-2022 12:20:12 Europe/Berlin] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\admin.php on line 147
+[15-Sep-2022 12:20:12 Europe/Berlin] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\admin.php on line 185
+[16-Sep-2022 11:11:39 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 110
+[19-Sep-2022 19:25:00 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 110
+[19-Sep-2022 21:39:24 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 110
+[19-Sep-2022 21:39:32 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 110
