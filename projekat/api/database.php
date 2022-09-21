@@ -38,30 +38,6 @@ class Database {
 		$this->dblink->set_charset("utf8");
 	}
 
-		function noviKorisnik($data) {
-			$mysqli = new mysqli("localhost", "root", "", "agencija");
-			$cols = '(imeIPrezime, kime, lozinka, administrator)';
-
-			$ime = mysqli_real_escape_string($mysqli,$data['ime']);
-			$kime = mysqli_real_escape_string($mysqli,$data['kime']);
-			$lozinka = mysqli_real_escape_string($mysqli,$data['lozinka']);
-
-
-			$values = "('".$ime."','".$kime."','".$lozinka."',0)";
-
-			$query = 'INSERT into korisnik '.$cols.' VALUES '.$values;
-			
-			if($mysqli->query($query))
-			{
-				$this ->result = true;
-			}
-			else
-			{
-				$this->result = false;
-			}
-			$mysqli->close();
-		}
-
 	function vratiProizvode() {
 		$mysqli = new mysqli("localhost", "root", "", "agencija");
 		$q = 'SELECT * FROM proizvodi p join kategorija k on p.kategorijaID = k.kategorijaID ';
@@ -83,6 +59,7 @@ class Database {
 		$this ->result = $mysqli->query($q);
 		$mysqli->close();
 	}
+
 	function vratiKategorije() {
 		$mysqli = new mysqli("localhost", "root", "", "agencija");
 		$q = 'SELECT * FROM kategorija ';

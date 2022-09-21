@@ -57,7 +57,7 @@ h3, h4, h5, h6 {
     color: #5d5d5d;
 }
 .box-content h3 {
-    color: #1d77c1;
+    color: #98c11d;
     font-size: 18px;
     font-weight: bold;
     border-bottom: dashed 1px #c7c7c7;
@@ -476,7 +476,7 @@ left:0px;
 right:0px;
 }
 .flex-caption {zoom: 1;bottom: 198px;background-color: transparent;color: #fff;margin: 0;padding: 2px 25px 0px 30px;/* position: absolute; */left: 0;text-align: right;margin: 0 auto;right: 0px;display: inline-block;bottom: 24%;width: 80%;right: 0 !important;border-radius: 15px 15px 0 0;}
-.flex-caption h3 {color: #1f63f5;letter-spacing: 0px;margin-bottom: 8px;text-transform: uppercase;font-size: 46px;font-weight: bold;}
+.flex-caption h3 {color: #d5f51f;letter-spacing: 0px;margin-bottom: 8px;text-transform: uppercase;font-size: 46px;font-weight: bold;}
 .flex-caption p {margin: 12px 0 18px;font-size: 22px;font-weight: 400;}
 .skill-home{margin-bottom:50px;background: #f6f6f6;padding: 25px 15px;}
 .c1{
@@ -1097,7 +1097,7 @@ display:block;
 	position: absolute;
 	width: 60px;
 	height: 1px;
-	bottom: px;
+	bottom: -1px;
 	right:0;
 
 }
@@ -1418,8 +1418,6 @@ footer .widget .flickr_badge img {
 
   
 footer{
-	position: absolute;
-    bottom: 0;
 	padding:50px 0 0 0;
 	color:#f8f8f8;
 }
@@ -1433,7 +1431,7 @@ footer a:hover {
 }
 
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6{
-	color: #2937b8;
+	color: #acb829;
 }
 
 footer address {
@@ -1461,6 +1459,11 @@ ul.social-network li {
 	height: 32px;
 	vertical-align: baseline;
 }
+
+#footer {
+	position: absolute;
+	bottom: 0;          /* Footer height */
+  }
 
 #sub-footer{
 	text-shadow:none;

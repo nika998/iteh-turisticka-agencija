@@ -18,38 +18,6 @@ class User {
 			$this->result = $res;
 	}
 
-	public function registracijaKorisnika($ime,$username,$password) {
-
-		$ime = mysqli_real_escape_string($this->mysqli,$ime);
-		$kime = mysqli_real_escape_string($this->mysqli,$username);
-		$lozinka = mysqli_real_escape_string($this->mysqli,$password);
-
-		$data = Array (
-    	"ime" => $ime,
-    	"kime" => $kime,
-    	"lozinka" => $lozinka
-        );
-
-			$podaci = json_encode($data);
-
-			$curl = curl_init("http://localhost/ITEH/projekat/api/noviKorisnik");
-			curl_setopt($curl, CURLOPT_POST, TRUE);
-			curl_setopt($curl, CURLOPT_POSTFIELDS, $podaci);
-			curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-			$odgovor = curl_exec($curl);
-			$json=json_decode($odgovor, true);
-			curl_close($curl);
-
-			if($json == "OK!") {
-				$this->setResult(true);
-			}
-			else {
-				$this->setResult(false);
-			}
-
-
-
-	}
 	public function login($username,$password) {
 
 		$username = mysqli_real_escape_string($this->mysqli,$username);

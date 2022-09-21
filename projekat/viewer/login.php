@@ -117,6 +117,31 @@ include('../model/konekcija.php');
 	
 	
 	</section>
+
+  	<!-- Slider -->
+    <div id="main-slider" class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="img/slides/5.jpg" alt="" />
+                <div class="flex-caption">
+                    <h3>Oktopod Travel</h3> 
+					<p>Letovanja, zimovanja i izleti</p> 
+					 
+                <!-- </div>
+              </li>
+              <li>
+                <img src="img/slides/3.jpg" alt="" />
+                <div class="flex-caption">
+                    <h3>Atraktivne destinacije</h3> 
+					<p>Putujte sa nama</p> 
+					 
+                </div> -->
+              </li>
+            </ul>
+        </div>
+
+ 
+	</section> 
 	
 	
 	
@@ -124,7 +149,7 @@ include('../model/konekcija.php');
 					
 					
 
-	<footer>
+	<footer id="footer">
 	
 	<div id="sub-footer">
 		<div class="container">

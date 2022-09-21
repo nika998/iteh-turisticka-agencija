@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 14, 2022 at 12:03 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- Generation Time: Feb 05, 2020 at 08:13 AM
+-- Server version: 10.4.6-MariaDB
+-- PHP Version: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -60,9 +61,9 @@ CREATE TABLE `korisnik` (
 --
 
 INSERT INTO `korisnik` (`korisnikID`, `imeIPrezime`, `kIme`, `lozinka`, `administrator`) VALUES
-(1, 'Vanja Jovic', 'vanja', 'vanja', 1),
-(2, 'Pera Peric', 'pera', 'pera', 0),
-(3, 'Aleksa Aleksic', 'aleksa', 'aleksa', 0),
+(1, 'Nikola Dulovic', 'nika', 'nika', 1),
+(2, 'Nemanja Stanojevic', 'nemanja', 'nemanja', 0),
+(3, 'Teodora Jovanovic', 'teodora', 'teodora', 0),
 (4, 'Voja Vojic', 'voja', 'voja', 0),
 (5, 'Mica Mikic', 'mica', 'mica', 0);
 
@@ -84,9 +85,8 @@ CREATE TABLE `porudzbina` (
 --
 
 INSERT INTO `porudzbina` (`porudzbinaID`, `datumPorudzbine`, `ukupanIznos`, `korisnikID`) VALUES
-(15, '2020-02-05', 2200, 3),
-(16, '2020-02-05', 1100, 3),
-(17, '2022-09-12', 2650, 2);
+(15, '2022-09-05', 2200, 3),
+(16, '2022-09-05', 1100, 3);
 
 -- --------------------------------------------------------
 
@@ -133,9 +133,7 @@ CREATE TABLE `stavkaporudzbine` (
 
 INSERT INTO `stavkaporudzbine` (`rb`, `porudzbinaID`, `proizvodID`, `kolicina`, `iznos`) VALUES
 (19, 15, 2, 2, 2200),
-(20, 16, 1, 2, 1100),
-(21, 17, 5, 2, 1000),
-(22, 17, 1, 3, 1650);
+(20, 16, 1, 2, 1100);
 
 --
 -- Indexes for dumped tables
@@ -192,7 +190,7 @@ ALTER TABLE `korisnik`
 -- AUTO_INCREMENT for table `porudzbina`
 --
 ALTER TABLE `porudzbina`
-  MODIFY `porudzbinaID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `porudzbinaID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `proizvodi`
@@ -204,7 +202,7 @@ ALTER TABLE `proizvodi`
 -- AUTO_INCREMENT for table `stavkaporudzbine`
 --
 ALTER TABLE `stavkaporudzbine`
-  MODIFY `rb` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `rb` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- Constraints for dumped tables

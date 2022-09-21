@@ -26,3 +26,17 @@ Stack trace:
 [19-Sep-2022 19:25:00 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 110
 [19-Sep-2022 21:39:24 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 110
 [19-Sep-2022 21:39:32 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 110
+[19-Sep-2022 22:40:44 Europe/Berlin] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\welcome.php on line 93
+[20-Sep-2022 10:21:09 Europe/Berlin] PHP Notice:  Undefined variable: poruka in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\putovanja.php on line 76
+[20-Sep-2022 17:42:13 Europe/Berlin] PHP Notice:  Trying to get property 'proizvodi' of non-object in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\service.php on line 148
+[20-Sep-2022 17:42:13 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\service.php on line 148
+[20-Sep-2022 17:43:37 Europe/Berlin] PHP Notice:  Trying to get property 'proizvodi' of non-object in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\service.php on line 148
+[20-Sep-2022 17:43:37 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\service.php on line 148
+[20-Sep-2022 17:43:57 Europe/Berlin] PHP Notice:  Trying to get property 'proizvodi' of non-object in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\service.php on line 148
+[20-Sep-2022 17:43:57 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\service.php on line 148
+[20-Sep-2022 18:01:27 Europe/Berlin] PHP Notice:  Trying to get property 'proizvodi' of non-object in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\service.php on line 148
+[20-Sep-2022 18:01:27 Europe/Berlin] PHP Warning:  Invalid argument supplied for foreach() in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\service.php on line 148
+[21-Sep-2022 10:29:12 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 110
+[21-Sep-2022 10:30:59 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 110
+[21-Sep-2022 10:31:07 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 110
+[21-Sep-2022 10:49:11 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 110

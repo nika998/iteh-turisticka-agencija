@@ -73,27 +73,5 @@ Flight::route('GET /porudzbine.json', function()
 	echo indent(json_encode($niz));
 });
 
-
-Flight::route('POST /noviKorisnik', function()
-{
-	header("Content-Type: application/json; charset=utf-8");
-	$db = Flight::db();
-	$post_data = file_get_contents('php://input');
-	$json_data = json_decode($post_data,true);
-	$db->noviKorisnik($json_data);
-	if($db->getResult())
-	{
-		$response = "OK!";
-	}
-	else
-	{
-		$response = "ERROR!";
-
-	}
-
-	echo indent(json_encode($response));
-
-});
-
 Flight::start();
 ?>

@@ -72,7 +72,7 @@
               <li>
                 <img src="img/slides/3.jpg" alt="" />
                 <div class="flex-caption">
-                    <h3>Uživajte u životu</h3> 
+                    <h3>Atraktivne destinacije</h3> 
 					<p>Putujte sa nama</p> 
 					 
                 </div>

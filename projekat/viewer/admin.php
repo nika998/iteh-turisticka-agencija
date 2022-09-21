@@ -33,10 +33,36 @@ $poruka = '';
       };
 
    }
+   $sql2 = "SELECT p.id,p.naziv, p.opis,p.cena,p.kategorijaID,k.nazivKategorije FROM proizvodi p join kategorija k on p.kategorijaID=k.kategorijaID";
+  $result2 = $mysqli->query($sql2);
   ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+#myTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#myTable td, #myTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#myTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#myTable tr:hover {background-color: #ddd;}
+
+#myTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
 <meta charset="utf-8">
 <title>Oktopod</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -79,10 +105,9 @@ $poruka = '';
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.php">Pocetna</a></li>
+                        <li class="active"><a href="index.php">Početna</a></li>
                         <li class="active"><a href="logout.php">Izlogujte se</a></li>
-                        <!-- <li class="active"><a href="cart.php">Vasa korpa</a></li> -->
-                        <li class="active"><a href="service.php">Privatni servis</a></li>
+                        <li><a href="service.php">Privatni servis</a></li>
                     </ul>
                 </div>
             </div>
@@ -104,6 +129,41 @@ $poruka = '';
              
               <h4><?php if($poruka!='') echo($poruka); ?></h4>
 
+            <h2>Putovanja</h2>
+            
+            <table id="myTable">
+              <thead>
+              <tr>
+              <th><strong>Br.</strong></th>
+              <th><strong>Naziv</strong></th> 
+              <th><strong>Opis</strong></th>
+              <th><strong>Cena</strong></th>
+              <th><strong>Kategorija</strong></th>
+             
+              <th><strong>Obrisi</strong></th>
+              </tr>
+              </thead>
+              <tbody>
+              <?php
+              $count=1;
+              
+              while($row2 = mysqli_fetch_assoc($result2)) { ?>
+              <tr><td><?php echo $count; ?></td>
+              
+              <td ><?php echo $row2["naziv"]; ?></td>
+              <td ><?php echo $row2["opis"]; ?></td>
+              <td ><?php echo $row2["cena"]; ?></td>
+             
+              <td ><?php echo $row2["nazivKategorije"]; ?></td>
+              
+              <td>
+              <a href="delete.php?id=<?php echo $row2["id"]; ?>">Obriši</a>
+             
+              </td>
+              </tr>
+              <?php $count++; } ?>
+              </tbody>
+              </table>
 
                   
 
