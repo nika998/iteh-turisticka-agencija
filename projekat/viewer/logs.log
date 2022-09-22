@@ -40,3 +40,9 @@ Stack trace:
 [21-Sep-2022 10:30:59 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 110
 [21-Sep-2022 10:31:07 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 110
 [21-Sep-2022 10:49:11 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 110
+[21-Sep-2022 19:14:44 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 98
+[21-Sep-2022 19:15:35 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 98
+[21-Sep-2022 19:15:36 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 98
+[21-Sep-2022 19:19:50 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 98
+[21-Sep-2022 19:48:16 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 98
+[22-Sep-2022 08:38:36 Europe/Berlin] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in C:\Fakultet\xampp\htdocs\ITEH\projekat\viewer\cart.php on line 98

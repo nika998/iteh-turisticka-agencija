@@ -2,18 +2,6 @@
  require("../model/konekcija.php");
  $poruka = '';
 
-
-    if(isset($_POST['login'])) {
-    		require('user.php');
-    		$user = new User($mysqli);
-    		$user->login(trim($_POST['username']),trim($_POST['password']));
-        if($user->getResult()){
-          header('Location: welcome.php');
-        }else{
-          $poruka="Neuspesno logovanje korisnika. Proverite korisnicko ime i sifru";
-        }
-     }
-
   ?>
 <!DOCTYPE html>
 <html lang="en">

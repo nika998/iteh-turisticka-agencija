@@ -1460,11 +1460,6 @@ ul.social-network li {
 	vertical-align: baseline;
 }
 
-#footer {
-	position: absolute;
-	bottom: 0;          /* Footer height */
-  }
-
 #sub-footer{
 	text-shadow:none;
 	color:#f5f5f5;

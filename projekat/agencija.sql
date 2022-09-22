@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 05, 2020 at 08:13 AM
--- Server version: 10.4.6-MariaDB
--- PHP Version: 7.3.9
+-- Generation Time: Sep 21, 2022 at 11:20 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -86,7 +85,9 @@ CREATE TABLE `porudzbina` (
 
 INSERT INTO `porudzbina` (`porudzbinaID`, `datumPorudzbine`, `ukupanIznos`, `korisnikID`) VALUES
 (15, '2022-09-05', 2200, 3),
-(16, '2022-09-05', 1100, 3);
+(16, '2022-09-05', 1100, 3),
+(17, '2022-09-20', 1050, 2),
+(18, '2022-09-21', 2650, 1);
 
 -- --------------------------------------------------------
 
@@ -111,7 +112,9 @@ INSERT INTO `proizvodi` (`id`, `naziv`, `opis`, `cena`, `kategorijaID`) VALUES
 (2, 'Maldivi', 'Obezbedjen avion 10 dana', 2000, 1),
 (3, 'Berlin', 'Prolece 3 dana ', 250, 3),
 (5, 'Bansko', 'Skijanje u Bugarskoj 10 dana', 500, 2),
-(6, 'Pariz', 'Dan zaljubljenih 4 noci', 700, 3);
+(6, 'Pariz', 'Dan zaljubljenih 4 noci', 700, 3),
+(7, 'London', 'Putovanje Temzom i obilazak znamenitosti grada 3 dana', 450, 3),
+(8, 'Kranjska Gora', 'Skijanje u Sloveniji 12 dana', 650, 2);
 
 -- --------------------------------------------------------
 
@@ -133,7 +136,11 @@ CREATE TABLE `stavkaporudzbine` (
 
 INSERT INTO `stavkaporudzbine` (`rb`, `porudzbinaID`, `proizvodID`, `kolicina`, `iznos`) VALUES
 (19, 15, 2, 2, 2200),
-(20, 16, 1, 2, 1100);
+(20, 16, 1, 2, 1100),
+(21, 17, 5, 1, 500),
+(22, 17, 1, 1, 550),
+(23, 18, 8, 1, 650),
+(24, 18, 2, 1, 2000);
 
 --
 -- Indexes for dumped tables
@@ -190,19 +197,19 @@ ALTER TABLE `korisnik`
 -- AUTO_INCREMENT for table `porudzbina`
 --
 ALTER TABLE `porudzbina`
-  MODIFY `porudzbinaID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `porudzbinaID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `proizvodi`
 --
 ALTER TABLE `proizvodi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `stavkaporudzbine`
 --
 ALTER TABLE `stavkaporudzbine`
-  MODIFY `rb` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `rb` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- Constraints for dumped tables
